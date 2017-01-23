@@ -117,7 +117,8 @@ autocmd InsertEnter * highlight Normal ctermbg=Black
 autocmd InsertLeave * highlight Normal ctermbg=DarkBlue
 
 " Mapping F8 to automatic spell checking
-map <F8> :setlocal spell! spelllang=en_us<CR>
+nmap <F8> :setlocal spell! spelllang=en_us<CR>
+imap <F8> <C-O>:setlocal spell! spelllang=en_us<CR>
 
 " Paste mode toggle with F2 to disable auto-indent and auto-completion
 set pastetoggle=<F2>
